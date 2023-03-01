@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="horizontal gray">
+        <li><a href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">curriculum</font></font></a></li>
+        <li><a href="presentacion.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">presentacion</font></font></a></li>
+        <li><a class="active" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cuenta</font></font></a></li>
+        <li class="rightli" style="float:right"><a href="acerca.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+    </ul>
+    <script src="script2.js"></script>
+    
+<button onclick="document.getElementById('id01').style.display='block'">Registrarse</button>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <form class="modal-content" action="bienvenida.html">
+    <div class="container">
+      <h1>registrarse</h1>
+      <p>Por favor llene los datos para crear una cuenta.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="ingrese su Email" name="email" required>
+
+      <label for="psw"><b>contraseña</b></label>
+      <input type="password" placeholder="ingrese su contraseña" name="psw" required>
+
+      <label for="psw-repeat"><b>Repetir contraseña</b></label>
+      <input type="password" placeholder="repetir contraseña" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> recordar datos
+      </label>
+
+      <p>al crear una cuenta acepto<a href="terminos y privacidad.txt" style="color:dodgerblue">Terminos y privacidad</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup" href="cuenta.html">registrar</button>
+      </div>
+    </div>
+  </form>
+</div>
+ 
+<button onclick="document.getElementById('id02').style.display='block'">iniciar</button>
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+ 
+  <form class="modal-content animate" action="datos.html">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="ingrese su Email" name="uname" required>
+
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="ingrese su contraseña" name="psw" required>
+
+      <button type="submit">iniciar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordar datos
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">recordano recuerda su <a href="index.html">contraseña?</a></span>
+    </div>
+  </form>
+</div>
+   
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+Hi, My name is
+
+Lee Jacobs
+
+My email address is
+
+lee.jacobs@example.com
+
+My birthday is
+
+9/4/1948
+
+My address is
+
+8796 Wheeler Ridge Dr
+
+My phone number is
+
+(751) 246-1282
+
+My password is
+
+merlot
